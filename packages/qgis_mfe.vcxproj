@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="generated\moc_coordinatecapturemaptool.cpp" />
+    <ClCompile Include="generated\moc_qgis_mfe.cpp" />
+    <ClCompile Include="generated\moc_MyCanvas.cpp" />
+    <ClCompile Include="generated\moc_MyCanvasWindow.cpp" />
+    <ClCompile Include="generated\moc_PluginAction.cpp" />
+    <ClCompile Include="generated\moc_PluginActions.cpp" />
+    <ClCompile Include="src\GisPluginList.cpp" />
+    <ClCompile Include="src\qgis_mfe.cpp" />
+    <ClCompile Include="src\MyCanvas.cpp" />
+    <ClCompile Include="src\MyCanvasWindow.cpp" />
+    <ClCompile Include="src\MyGisConnection.cpp" />
+    <ClCompile Include="src\PluginAction.cpp" />
+    <ClCompile Include="src\PluginActions.cpp" />
+    <ClCompile Include="src\QApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="include\qgis_mfe.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QT5DIR64OSGEO)\bin\moc.exe   %(FullPath)    -o generated\moc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Step: MOC%27ing %(FullPath)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Step: MOC%27ing %(FullPath)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">generated\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QT5DIR64OSGEO)\bin\moc.exe   %(FullPath)    -o generated\moc_%(Filename).cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">generated\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="include\coordinatecapturemaptool.h">
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">generated\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">generated\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Step: MOC%27ing %(FullPath)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Step: MOC%27ing %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QT5DIR64OSGEO)\bin\moc.exe   %(FullPath)    -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QT5DIR64OSGEO)\bin\moc.exe   %(FullPath)    -o generated\moc_%(Filename).cpp</Command>
+    </CustomBuild>
+    <ClInclude Include="include\QApp.h" />
+    <CustomBuild Include="include\MyCanvas.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QT5DIR64OSGEO)\bin\moc.exe   %(FullPath)    -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QT5DIR64OSGEO)\bin\moc.exe   %(FullPath)    -o generated\moc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Step: MOC%27ing %(FullPath)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Step: MOC%27ing %(FullPath)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">generated\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">generated\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="include\MyCanvasWindow.h">
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">generated\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">generated\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Step: MOC%27ing %(FullPath)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Step: MOC%27ing %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QT5DIR64OSGEO)\bin\moc.exe   %(FullPath)    -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QT5DIR64OSGEO)\bin\moc.exe   %(FullPath)    -o generated\moc_%(Filename).cpp</Command>
+    </CustomBuild>
+    <ClInclude Include="include\MyGisConnection.h" />
+    <ClInclude Include="include\MyMenusToolbarsDef.h" />
+    <ClInclude Include="include\MyPluginSharedMem.h" />
+    <CustomBuild Include="include\PluginAction.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QT5DIR64OSGEO)\bin\moc.exe   %(FullPath)    -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QT5DIR64OSGEO)\bin\moc.exe   %(FullPath)    -o generated\moc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Step: MOC%27ing %(FullPath)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Step: MOC%27ing %(FullPath)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">generated\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">generated\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="include\PluginActions.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QT5DIR64OSGEO)\bin\moc.exe   %(FullPath)    -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QT5DIR64OSGEO)\bin\moc.exe   %(FullPath)    -o generated\moc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Step: MOC%27ing %(FullPath)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Step: MOC%27ing %(FullPath)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">generated\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">generated\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>qgis_mfe</ProjectName>
+    <ProjectGuid>{3C0EC403-C128-496D-B683-08C131CFA609}</ProjectGuid>
+    <RootNamespace>WL_dll</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Release/WL_dll.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>.\include;..\mfe_app\include;c:\OSGeo4W\include;c:\OSGeo4W\apps\qgis\include;$(QT5DIR64OSGEO)\include;$(QT5DIR64OSGEO)\include\ActiveQt\;$(QT5DIR64OSGEO)\include\Qt\;$(QT5DIR64OSGEO)\include\QtCore\;$(QT5DIR64OSGEO)\include\QtXml\;$(QT5DIR64OSGEO)\include\QtGui\;$(QT5DIR64OSGEO)\include\QtSvg\;$(QT5DIR64OSGEO)\include\QtWidgets\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;QT_DLL;QT_THREAD_SUPPORT;CORE_EXPORT=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0809</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;qgis_core.lib;qgis_gui.lib;qgis_analysis.lib;qt515_gui_api.lib;qt515_ftn_api.lib;qt515_canvas_window.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>c:\OSGeo4W\apps\qgis\plugins\$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(QT5DIR64OSGEO)\lib;..\qgis-lib\;..\mfe_app\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Debug/WL_dll.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\include;..\mfe_app\include;c:\OSGeo4W\apps\qgis\include;$(QT5DIR64OSGEO)\include;$(QT5DIR64OSGEO)\include\ActiveQt\;$(QT5DIR64OSGEO)\include\Qt\;$(QT5DIR64OSGEO)\include\QtCore\;$(QT5DIR64OSGEO)\include\QtXml\;$(QT5DIR64OSGEO)\include\QtGui\;$(QT5DIR64OSGEO)\include\QtSvg\;$(QT5DIR64OSGEO)\include\QtWidgets\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;CORE_EXPORT=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0413</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;qgis_core.lib;qgis_gui.lib;qgis_analysis.lib;qt512_gui_api.lib;qt512_ml_support.lib;qt512_plugin_shared_mem_def.lib;qt512_ftn_api.lib;qt512_common_utils.lib;qt512_commands_dialog.lib;qt512_common_dialogs.lib;qt512_property_editor.lib;qt512_canvas_window.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>c:\OSGeo4W\apps\qgis\plugins\$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(QT5DIR64OSGEO)\lib;..\qgis-lib\;..\mfe_app\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

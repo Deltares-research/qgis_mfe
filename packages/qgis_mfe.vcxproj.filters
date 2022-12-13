@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\GisPluginList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MyCanvas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MyCanvasWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MyGisConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PluginAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PluginActions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qgis_mfe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generated\moc_coordinatecapturemaptool.cpp">
+      <Filter>Generated FIles</Filter>
+    </ClCompile>
+    <ClCompile Include="generated\moc_MyCanvas.cpp">
+      <Filter>Generated FIles</Filter>
+    </ClCompile>
+    <ClCompile Include="generated\moc_MyCanvasWindow.cpp">
+      <Filter>Generated FIles</Filter>
+    </ClCompile>
+    <ClCompile Include="generated\moc_PluginAction.cpp">
+      <Filter>Generated FIles</Filter>
+    </ClCompile>
+    <ClCompile Include="generated\moc_PluginActions.cpp">
+      <Filter>Generated FIles</Filter>
+    </ClCompile>
+    <ClCompile Include="generated\moc_qgis_mfe.cpp">
+      <Filter>Generated FIles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\QApp.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\MyGisConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MyMenusToolbarsDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MyPluginSharedMem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\QApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="include\coordinatecapturemaptool.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="include\MyCanvas.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="include\MyCanvasWindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="include\PluginAction.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="include\PluginActions.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="include\qgis_mfe.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{da78a438-8e12-4cff-bc45-0b8954f8d3dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated FIles">
+      <UniqueIdentifier>{d1dd9009-7cb4-4472-adce-dce13f590eb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6af293cd-a562-4a75-a376-4c91fdff7e09}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
