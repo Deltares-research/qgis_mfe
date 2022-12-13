@@ -868,7 +868,7 @@ bool MyCanvas::isFontAvailable(const char* name)
 //
 int MyCanvas::getTextWidth(const char* name)
 {
-    int size = (mMapCanvas->fontMetrics()).width(name);
+    int size = (mMapCanvas->fontMetrics()).horizontalAdvance(name);
     return size;
 }
 //

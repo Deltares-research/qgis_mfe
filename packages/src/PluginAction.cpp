@@ -7,7 +7,7 @@
 
 #include "PluginAction.h"
 #include "PluginActions.h"
-#include "qgis_mfe_test.h"
+#include "qgis_mfe.h"
 
 
 PluginAction::PluginAction ( const char* menuText, AbstractCommands* commands, int command_id,

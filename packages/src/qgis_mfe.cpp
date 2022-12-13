@@ -1,4 +1,4 @@
-#include "qgis_mfe_test.h"
+#include "qgis_mfe.h"
 #include <QAction>
 
 #define GUI_EXPORT __declspec(dllimport)
