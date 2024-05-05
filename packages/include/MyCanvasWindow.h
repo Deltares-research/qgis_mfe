@@ -12,7 +12,7 @@
 #include <QToolBar>
 
 #include "qgisinterface.h"
-#include "qgsapplication.h"
+//#include "qgsapplication.h"
 #include "qgsmapcanvas.h"
 #include "qgsstatusbar.h"
 #include "qgsvectorlayer.h"

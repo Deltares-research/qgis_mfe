@@ -1,6 +1,4 @@
 #include <stdlib.h>
-#include <QtWidgets/QApplication>
-//#include <qwindowdefs.h>
 
 #if defined (WIN32) || defined(WIN64)
 #  define DLL_EXPORT

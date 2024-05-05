@@ -21,7 +21,7 @@
 #include <QtMath>
 #include <QFile>
 
-#include <qgsapplication.h>
+//#include <qgsapplication.h>
 #include <qgslayertree.h>
 #include <qgisplugin.h>
 #include <qgisinterface.h>

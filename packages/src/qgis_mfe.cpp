@@ -4,7 +4,7 @@
 #define GUI_EXPORT __declspec(dllimport)
 
 #include "qgisinterface.h"
-#include "qgsapplication.h"
+//#include "qgsapplication.h"
 #include <qgsmessagelog.h>
 
 #if defined(WIN64)
@@ -16,7 +16,7 @@
 #define MAX_M_ACTION 1
 
 #define PROGRAM "QGIS_MFE"
-#define QGIS_MFE_VERSION "0.95.00"
+#define QGIS_MFE_VERSION "0.96.00"
 #define COMPANY "Deltares"
 #define ARCH "Win64"
 
@@ -255,6 +255,7 @@ void qgis_mfe::initGui()
 void qgis_mfe::runAction()
 {
     mQGisIface->mapCanvas()->setMapTool(mMyCanvas);
+    tbar2->setVisible(true);
 }
 //
 //-----------------------------------------------------------------------------

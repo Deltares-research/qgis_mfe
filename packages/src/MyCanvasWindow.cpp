@@ -152,7 +152,7 @@ void* MyCanvasWindow::getQWidget()
 }
 void MyCanvasWindow::setStatusBarText(const char* s)
 {
-    mQGisIface->mainWindow()->setToolTip(s);
+    mQGisIface->mainWindow()->setToolTip(QString(s));
 }
 void MyCanvasWindow::pgbarSetTitle(const char* s)
 {

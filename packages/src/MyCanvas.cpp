@@ -13,7 +13,7 @@
 #include "qgscoordinatereferencesystem.h"
 #include "qgsmaptool.h"
 #include "qgspoint.h"
-#include "qgsapplication.h"
+//#include "qgsapplication.h"
 
 #include <QObject>
 #include <QPointer>
@@ -46,7 +46,7 @@ MyCanvas::MyCanvas(QgsMapCanvas* mapCanvas) :
     QgsMapCanvasItem( mapCanvas ),
     printing(false)
     {
-    QgsMapTool::setCursor(QgsApplication::getThemeCursor(QgsApplication::Cursor::CrossHair));
+    QgsMapTool::setCursor(Qt::CrossCursor);
     
     mMapCanvas = mapCanvas;
     mMapCanvasItem = mapCanvas;
