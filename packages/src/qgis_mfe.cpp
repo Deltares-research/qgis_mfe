@@ -602,8 +602,7 @@ QGISEXTERN const QString* version()
     return &qgis_mfe::s_plugin_version;
 }
 
-//QGISEXTERN QString const& icon() // derde vanuit QGIS
-QGISEXTERN const QString* icon()
+QGISEXTERN const QString* icon() // derde vanuit QGIS
 {
     QString program_files = QProcessEnvironment::systemEnvironment().value("ProgramFiles", "");
     QString q_icon_file = program_files + QString("/deltares/qgis_umesh/icons/qgis_umesh.png");
